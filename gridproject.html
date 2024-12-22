@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <div></div>
+        <h2>Dessert gallery</h2> 
+        <div class="button">
+        <button class="btn">discover</button>
+        <button class="btn">favourites</button>
+        </div>
+    </div >
+    <div class="nav">
+    <div>Cakes</div>
+    <div> Cupcakes</div>
+    <div>Cookies</div>
+    <div>Ice cream</div>
+    <div>Chocolate</div>
+    <div>Candy</div>
+    <button class="btn">sell deserts</button>
+    </div>
+ <div style="background-color: white;">
+    <div class="cup"><h1>Shop Cupcake</h1></div>
+    <div class="cat">
+    <h3 class="cag">Categories</h3> 
+    <div class="categories">
+    <div class="vanilla">Vanilla</div>
+    <div class="chocolate">chocolate</div>
+    <div class="Fruit">Fruit</div>
+    <div class="Speciality">Speciality</div>
+    <div class="ice">Ice cream</div>
+    <div class="candy">Candy</div>
+    </div>
+    </div>
+
+<div style="background-color: white;">
+ <h3 class="Sweet" >Sweet summer treats</h3>
+<div class="list">
+    <div><img src="shortcake.jpg" alt=""><p>Strawberry Shortcake</p></div>
+    <div><img src="truffk.jpg" alt=""><p>Chocoloate Truffle</p></div>
+    <div><img src="Lemon-Blueberry.webp" alt=""><p>Lemon Blueberry cupcake</p></div>
+    <div><img src="red-velvet.webp" alt=""><p>Red Velvet Cake</p></div>
+    <div><img src="chocolate cake.jpg" alt=""><p>Chocolate Cake</p></div>
+    <div><img src="vanilla.jpg" alt=""><p>Vanilla Cupcake</p></div>
+    <div><img src="cookies.jpg" alt=""><p>Cookies</p></div>
+    <div><img src="Fruit-Tarts.jpg" alt=""><p>Fruit Tarts</p></div>
+    <div><img src="chocolate chips.jpg" alt=""><p>Chocolate Chip Cookies</p></div>
+    <div><img src="brownies.jpg" alt=""><p>Brownies</p></div>
+</div>
+</div>
+</div>
+</body>
+<style>
+  
+body{
+    background-color: papayawhip;
+}
+
+.head{
+    display: flex;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding-left: 20px;   
+}
+.btn{
+    background-color: black;
+    color: white; 
+    height: 40px;
+    border-radius:10px ;  
+}
+.button{
+    margin-right: 10px;
+    margin-left: 60rem;
+    align-self: center;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    height: 3em;
+    align-items: center;
+    font-size: 17px;
+}
+.cup{
+    background-color: black;
+    height: 5em;
+    color: white;
+    align-content: center;
+    justify-items: center;
+}
+.cat{
+    background-color: white;
+}
+.cag{
+    font-size: 40px;
+    padding-left: 90px;
+    padding-top: 20px;
+
+}
+.categories{
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns:repeat(6,100px)  ;
+    grid-gap: 1em;
+    text-align: center;   
+    font-size: 20px;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    
+}
+.vanilla{
+    align-content: center;
+    background-image: url(vanilla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 7em;
+    border-radius: 20px;
+
+}
+.chocolate{
+    background-image: url(chocolate\ cake.jpg);
+    background-size: contain;
+    align-content: center;
+    color: papayawhip;
+    width: 7em;
+    border-radius: 20px;
+
+}
+.Fruit{
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    align-content: center;
+    background-image: url(fruit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    width: 7em;
+    border-radius: 20px;
+
+}
+.Speciality{ 
+    align-content: center;
+    background-image: url(specialities.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:  white;
+    width: 7em;
+    border-radius: 20px;
+}
+.ice{
+    align-content: center;
+    background-image: url(Ice-Cream.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: brown;
+    width: 7em;
+    border-radius: 20px;
+}
+.candy{
+    align-content: center;
+    background-image: url(candy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 7em;
+    border-radius: 20px;
+
+}
+.list{
+    display: grid;
+    grid-template-columns:repeat(5,100px) ;
+    grid-template-rows:100px 100px ;
+    grid-gap: 15em 4em;
+    justify-content: space-evenly;
+    background-color: white;
+    height: 100em;
+    padding-top: 1em;
+    padding-right: 4em;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+p{
+font-size: 15px;
+}
+.Sweet{
+    padding-top: 30px;
+    font-size: 40px;
+    padding-left: 60px;
+}
+</style>
+</html>
