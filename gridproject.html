@@ -6,13 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="head">
-        <div></div>
+    <div class="head">  
         <h2>Dessert gallery</h2> 
-        <div class="button">
+        <span class="button">
         <button class="btn">discover</button>
         <button class="btn">favourites</button>
-        </div>
+        </span>
     </div >
     <div class="nav">
     <div>Cakes</div>
@@ -21,9 +20,9 @@
     <div>Ice cream</div>
     <div>Chocolate</div>
     <div>Candy</div>
-    <button class="btn">sell deserts</button>
+    <button class="btn" id="btn">sell deserts</button>
     </div>
- <div style="background-color: white;">
+ <div style="background-color: white;" class="bag">
     <div class="cup"><h1>Shop Cupcake</h1></div>
     <div class="cat">
     <h3 class="cag">Categories</h3> 
@@ -66,6 +65,7 @@ body{
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     padding-left: 20px;   
+    justify-content: space-between;
 }
 .btn{
     background-color: black;
@@ -74,9 +74,8 @@ body{
     border-radius:10px ;  
 }
 .button{
-    margin-right: 10px;
-    margin-left: 60rem;
     align-self: center;
+    margin-right: 20px;
 }
 .nav{
     display: flex;
@@ -196,6 +195,55 @@ font-size: 15px;
     padding-top: 30px;
     font-size: 40px;
     padding-left: 60px;
+}
+@media(max-width:768px){
+    .categories{
+        display: grid;
+        grid-template-rows: 100px 100px;
+        grid-template-columns: 100px 100px 100px;
+    }
+    .nav{
+        display: grid ;
+        grid-template-columns: 100px 100px 100px;
+        height: 7em;
+        background-color: white;
+        padding-top: 20px;
+    }
+    .cup{
+        margin-top: 4em;
+    }
+    .head{
+     display: block;
+     align-content: center;
+     font-size: 30px;
+     padding-left: 150px;
+    }
+    .button{
+      display: flex;
+      margin-bottom: 20px;
+      padding-left: 80px;
+    }
+    #btn{
+        margin-left: 200px;
+        width: 80px;
+    }
+    .bag{
+        margin-top: -60px;
+    }
+    .list{
+        display: block;
+        justify-items: center;
+        height: 300em;
+    }
+    .list p{
+        font-size: 20px;
+        padding-left: 50px;
+    }
+    .list img{
+        width: 300px;
+        height:300px ;
+        border-radius: 20px;
+    }
 }
 </style>
 </html>
